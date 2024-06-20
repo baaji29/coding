@@ -26,16 +26,16 @@ const inventory = [
     { name: "goat", type: "meat", quantity: 23 },
     { name: "cherries", type: "fruit", quantity: 5 },
     { name: "fish", type: "meat", quantity: 22 },
+    { name: "potato", type: "vegetables", quantity: 4}
   ];
 
 
 const result = inventory.reduce((acummulator, currentValue) => {
   let key = currentValue.type;
-  console.log("acummulator  key",acummulator[key])
   if(!acummulator[key]) {
     acummulator[key] = []
   }
-  // acummulator[key].push(currentValue);
+  acummulator[key].push(currentValue);
   return acummulator;
 },{})
 
