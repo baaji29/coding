@@ -6,16 +6,16 @@
 
 // Removing the repeated value starts here
 
-// const sequence = [1, 2,3,5,67,94,2,1,2]
+const sequence = [1, 2,3,5,67,94,2,1,2]
 
-// const norepeat = sequence.reduce((accumulator, currentValue) => {
-//     if(accumulator.indexOf(currentValue) === -1) {
-//         accumulator.push(currentValue);
-//     }
-//     return accumulator
-// }, [])
+const norepeat = sequence.reduce((accumulator, currentValue) => {
+    if(accumulator.indexOf(currentValue) === -1) {
+        accumulator.push(currentValue);
+    }
+    return accumulator
+}, [])
 
-// console.log(norepeat)
+console.log(norepeat)
 
 // Removing the repeated value End here
 
