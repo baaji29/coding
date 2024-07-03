@@ -40,3 +40,4 @@ const result = inventory.reduce((acummulator, currentValue) => {
 },{})
 
 console.log("result",result)
+

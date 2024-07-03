@@ -8,7 +8,7 @@ const binarySearch = (arr, key) => {
     
     while(left <= right) {
         const arrayMid = Math.floor((left + right) / 2);
-        console.log(arrayMid, arr[arrayMid])
+        console.log("mid Value", arrayMid, arr[arrayMid])
         console.log("right:",right,"left:", left)
         if(arr[arrayMid] == key) return true
         else if(arr[arrayMid] < key) {left = arrayMid + 1}
